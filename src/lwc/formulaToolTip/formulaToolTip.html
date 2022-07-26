@@ -1,0 +1,28 @@
+<template>
+
+    <slot>
+
+        <vlocity_ins-masked-input type="formula"
+
+                                  label={_propSetMap.label}
+                                  imask={_imaskAttributes}
+                                  value={renderedValue}
+                                  class={_styleClasses.input}
+                                  theme={_theme}
+                                  data-omni-input>
+
+        </vlocity_ins-masked-input>
+
+        <vlocity_ins-tooltip
+
+                if:true={_propSetMap.helpText}
+                class="slds-p-right_x-small slds-form-element__label mytooltip"
+                content={_propSetMap.helpText}
+                extrabuttonclass="slds-m-bottom_xx-small"
+        >
+
+        </vlocity_ins-tooltip>
+
+    </slot>
+
+</template>
