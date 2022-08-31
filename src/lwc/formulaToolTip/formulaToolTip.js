@@ -22,11 +22,14 @@ export default class formulaToolTip extends OmniscriptBaseMixin(omniscriptFormul
         tmpDiv.style.width='auto';
         tmpDiv.style.whiteSpace='nowrap';
         tmpDiv.style.fontSize = '12px';
-        tmpDiv.style.color='transparent';
+        //tmpDiv.style.color='transparent';
+        tmpDiv.style.color='red';
+
+
         tmpDiv.innerHTML=this.jsonDef.propSetMap.label;
         document.body.appendChild(tmpDiv);
-        this.tmpWidth = (tmpDiv.offsetWidth+25) + 'px'; //this isn't an exact science, but it gets pretty close
-    console.log(this.tmpWidth);
+        this.tmpWidth = (tmpDiv.offsetWidth+40) + 'px'; //this isn't an exact science, but it gets pretty close
+        console.log(this.tmpWidth);
         document.documentElement.style.setProperty('--myvariable', this.tmpWidth);
         tmpDiv.remove();
         return template;

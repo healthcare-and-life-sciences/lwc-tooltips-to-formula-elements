@@ -1,1 +1,1 @@
-.mytooltip {position:relative; top:-58px; left:var(–myvariable);}
+.mytooltip {position:relative; top:-58px; left: var(--myvariable, 250px);}
