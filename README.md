@@ -1,3 +1,4 @@
+![](images/ahlsbanner.png)
 <h1>A-HLS LWC Tooltips to Formula Elements - Documentation</h1>
 
 <h2>Overview</h2>
